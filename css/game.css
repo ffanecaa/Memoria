@@ -92,7 +92,7 @@ text-align: center;
 #fails,
 #fin {
   font-size: 1.5rem;
-  font-family: frightMaiden;
+  font-family: var(--mt-ff-russo)
 }
 
 #animationEnd {
@@ -100,7 +100,7 @@ text-align: center;
   animation: animationEnd 1s infinite;
   transform-origin: center;
   font-size: 1.5rem;
-  font-family: frightMaiden;
+  font-family: var(--mt-ff-russo);
 }
 
 @keyframes animationEnd {
@@ -135,19 +135,13 @@ button:hover {
 button a{
   font-size: 3rem;
 }
-.btn {
-  border: solid white 2px;
-  border-radius: 20px;
-  background-color: rgb(173, 115, 7);
-  width: 200px;
-  display: none;
-  justify-content: center;
-  align-items: center;
+.btn a{
+  
+  color:var(--mt--color--primary)
 }
 
-.btn:hover {
-  background-color: orange;
-  border: solid rgb(92, 6, 150);
+.btn:hover a{
+  color:var(--mt--color--5)
 }
 
 a {
@@ -224,93 +218,70 @@ img{
   transition: transform 0.3s;
 }
 
-@media (max-width: 479px) {
-  /* Ajusta para el ancho del iPhone 12 */
 
-  body {
-    width: 100%;
-    height: 1000px;
-    color: white;
-    background-image: linear-gradient(
-        rgba(26, 240, 11, 0.492),
-        rgba(79, 6, 143, 0.492),
-        rgba(5, 5, 5, 0.492)
-      ),
-      url(../img/imagenBackground.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
+/* Estilo para pantallas pequeñas (smartphones en orientación vertical) */
+@media (max-width: 480px) {
+
+  .container {
+    gap:5px}
+
+  .container_play {
+    width: 400px;
+    height: 400px;
   }
-
-
 
   #gameBoard {
-    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-    gap: 10px;
-    justify-items: center;
-  
-    background: rgb(40, 26, 169);
-    
-   
+    gap: 5px;
+    margin: 32px;
   }
+
+  .card {
+    width: 77px;
+    height: 77px;
+
+  img {
+    width: 77px;
+    height: 77px;
+  }
+
+  button {
+    font-size: 1.2rem;
+  }
+}}
+
+
+
+
+
+  @media (min-width: 481px) and (max-width: 767px) { 
+
+  .container {
+    gap:5px}
 
   .container_play {
     width: 500px;
-    height: 900px;
-    perspective: 1000px;
-    font-size: 2rem;
-    background-color: rgb(243, 73, 11);
+    height: 500px;
   }
 
-  .front,
-  .back {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-color: #6d1d51;
-    border: inset 3px #8aa538;
-    display: grid;
-    place-content: center;
-    font-size: 4rem;
-    border-radius: 0.5rem;
-    backface-visibility: hidden;
-    user-select: none;
-  }
-  
-  #animationEnd {
-    text-align: center;
-    position: fixed;
-    animation: animationEnd 1s infinite;
-    transform-origin: center;
-    font-size: 0.9rem;
-    font-family: frightMaiden;
-  }
-}
-
-@media (max-height: 730px) {
-  body {
-    width: 100%;
-    height: 100vh;
-    color: white;
-    background-image: linear-gradient(
-        rgba(26, 240, 11, 0.492),
-        rgba(79, 6, 143, 0.492),
-        rgba(5, 5, 5, 0.492)
-      );
-   
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+  #gameBoard {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 5px;
+    margin: 32px;
   }
 
-  #confetti {
-    display: none;
-  }
-}
+  .card {
+    width: 88px;
+    height: 88px;
 
-/* Start https://www.cursors-4u.com */
+  img {
+    width: 88px;
+    height: 88px;
+  }
+
+  button {
+    font-size: 1.2rem;
+  }
+}}
+
+

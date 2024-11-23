@@ -1,4 +1,4 @@
-const elementos = [
+const elementos1 = [
   "../img/emojis/diosa.png",
   "../img/emojis/idolo.png",
   "../img/emojis/jomon.png",
@@ -8,7 +8,7 @@ const elementos = [
   "../img/emojis/sudame.png",
   "../img/emojis/venus.png",
 ];
-const elementos1 = [
+const elementos = [
   "../img/robots/becho.png",
   "../img/robots/perro.png",
   "../img/robots/roboensaladera.png",

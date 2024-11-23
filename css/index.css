@@ -9,8 +9,11 @@
   --mt-ff-russo: "Russo One", sans-serif;
   --mt-ff-fontawesome: "Font Awesome 6 Pro";
   --mt--color--primary:#B3351A;
-  --mt--color--second:#A44751;
-  /* --mt--color--second:#E99FA4; */
+  --mt--color--1: #F2EDDC;
+  --mt--color--2:#BFAE99;
+  --mt--color--3:#8C7C68;
+  --mt--color--4:#594A3C;
+  --mt--color--5:#40322B;
 
 }
 
@@ -26,15 +29,12 @@ body {
   height: 100vh;
   color: white;
   background-image: linear-gradient(60deg,
-   
-  #F2EDDC,
-  #BFAE99,
-
-  #8C7C68,
-    #594A3C,
-    #40322B
-  
-    );
+   var(--mt--color--1),
+   var(--mt--color--2),
+   var(--mt--color--3),
+   var(--mt--color--4),
+   var(--mt--color--5)
+);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -68,3 +68,21 @@ img{
 
 img:hover {-webkit-transform: rotate(360deg);transform: rotate(360deg);}
 
+button {
+  border: inset var(--mt--color--2) 2px;
+  background-color:var(--mt--color--3);
+  padding:10px 20px;
+  margin: 10px;
+ 
+  cursor: pointer;
+ 
+}
+button:hover {
+  border: inset var(--mt--color--3) 2px;
+  background-color:var(--mt--color--2);
+}
+button a{
+  all:unset;
+  font-size: 1.5rem;
+color:var(--mt--color--primary)
+}
