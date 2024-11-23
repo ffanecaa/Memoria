@@ -32,8 +32,9 @@ body {
    var(--mt--color--1),
    var(--mt--color--2),
    var(--mt--color--3),
-   var(--mt--color--4),
-   var(--mt--color--5)
+   var(--mt--color--4)
+ 
+   
 );
   display: flex;
   flex-direction: column;
