@@ -8,7 +8,7 @@ const elementos1 = [
   "../img/emojis/sudame.png",
   "../img/emojis/venus.png",
 ];
-const elementos3 = [
+const elementos = [
   "../img/robots/becho.png",
   "../img/robots/perro.png",
   "../img/robots/roboensaladera.png",
@@ -17,17 +17,6 @@ const elementos3 = [
   "../img/robots/robotRojo.png",
   "../img/robots/robotRojoL.png",
   "./img/robots/rosa.png",
- 
-];
-const elementos = [
-  "../img/becho.png",
-  "../img/perro.png",
-  "../img/roboensaladera.png",
-  "../img/roboperro.png",
-  "../img/robotoazul.png",
-  "../img/robotRojo.png",
-  "../img/robotRojoL.png",
-  "../img/rosa.png",
  
 ];
 
