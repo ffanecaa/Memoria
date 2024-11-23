@@ -86,3 +86,53 @@ button a{
   font-size: 1.5rem;
 color:var(--mt--color--primary)
 }
+
+@media (max-width: 480px) {
+  .container {
+    gap: 20px; /* Reduce el espacio entre elementos */
+    align-items: flex-start; /* Alinea los elementos al inicio */
+  }
+
+  .header {
+    flex-direction: column; /* Cambia a columna para pantallas más pequeñas */
+    gap: 20px;
+  }
+
+  h1 {
+    font-size: 2rem; /* Reduce el tamaño del texto */
+  }
+
+  img {
+    filter: brightness(90%) sepia(1) hue-rotate(-10deg) saturate(200%);
+    width: 100%; /* Asegúrate de que las imágenes no desborden */
+  }
+
+  button {
+    padding: 8px 16px; /* Reduce el tamaño de los botones */
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .container {
+    gap: 30px; /* Ajusta el espacio entre los elementos */
+    align-items: center; /* Centra los elementos */
+  }
+
+  .header {
+    justify-content: space-between; /* Ajusta el espacio entre los elementos */
+  }
+
+  h1 {
+    font-size: 3rem; /* Ajusta el tamaño del texto */
+  }
+
+  img {
+    filter: brightness(100%) sepia(1) hue-rotate(-10deg) saturate(250%);
+    width: 80%; /* Asegura que la imagen no sea demasiado grande */
+  }
+
+  button {
+    padding: 12px 24px; /* Ajusta el tamaño del botón */
+    font-size: 1.4rem;
+  }
+}
