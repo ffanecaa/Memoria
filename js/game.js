@@ -28,7 +28,7 @@ let win = 0;
 let cardsFlipped = 0;
 let canFlip = true;
 
-let audio = document.getElementById("audio");
+
 
 function couple(array) {
   for (let i = array.length - 1; i > 0; i--) {
@@ -88,7 +88,7 @@ gameBoard.addEventListener("click", (e) => {
 });
 
 const matchCardsVerification = () => {
-  audio.play();
+
   if (ArrayCards.length === 2) {
     if (ArrayImages[0] === ArrayImages[1]) {
       ArrayCards = [];

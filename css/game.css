@@ -179,8 +179,10 @@ img{
   width:150px;
   height:150px;
   object-fit:scale-down;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3)
-}
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+ 
+  }
+
 
 .content {
   position: absolute;
@@ -206,7 +208,8 @@ img{
   user-select: none;
 }
 .front{
-  background: #40322B
+  background:var(--mt--color--4);
+ 
 }
 
 .back {
@@ -241,7 +244,7 @@ img{
   .card {
     width: 77px;
     height: 77px;
-
+  }
   img {
     width: 77px;
     height: 77px;
@@ -258,7 +261,7 @@ img{
   h1{
     font-size: 1.5rem;
   }
-}}
+}
 
 
 
