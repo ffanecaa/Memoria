@@ -91,8 +91,10 @@ text-align: center;
 
 #fails,
 #fin {
+  position: relative;
   font-size: 1.5rem;
-  font-family: var(--mt-ff-russo)
+  font-family: var(--mt-ff-russo);
+  z-index:100;
 }
 
 #animationEnd {

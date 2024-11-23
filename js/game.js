@@ -116,7 +116,7 @@ const matchCardsVerification = () => {
     audioAplausos.play();
     document.getElementById(
       "animationEnd"
-    ).innerText = `🎉¡Juego completado! en ${fails} fallos🎉`;
+    ).innerText = `¡Juego completado!🏅`;
     document.getElementById("fails").innerText = "";
     document.getElementById("fin").innerText = "";
     document.getElementById("contenedorBoton").style.display = "flex";
