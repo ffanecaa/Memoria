@@ -1,0 +1,316 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Sora:100,200,300,regular,500,600,700,800);
+@import url(https://fonts.googleapis.com/css?family=Russo+One:regular);
+@import url(https://fonts.googleapis.com/css?family=Russo+One:regular);
+
+:root {
+  --mt-ff-body: "Sora", sans-serif;
+  --mt-ff-heading: "Sora", sans-serif;
+  --mt-ff-russo: "Russo One", sans-serif;
+  --mt-ff-fontawesome: "Font Awesome 6 Pro";
+  --mt--color--primary:#B3351A;
+  --mt--color--1: #F2EDDC;
+  --mt--color--2:#BFAE99;
+  --mt--color--3:#8C7C68;
+  --mt--color--4:#594A3C;
+  --mt--color--5:#40322B;
+
+}
+
+* {
+  font-family:var(--mt-ff-fontawesome);
+  font-family:var(--mt-ff-body);
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  color: white;
+  background-image: linear-gradient(60deg,
+   var(--mt--color--1),
+   var(--mt--color--2),
+   var(--mt--color--3),
+   var(--mt--color--4),
+   var(--mt--color--5)
+);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  margin-top: 0;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  flex-direction: column;
+ 
+ 
+}
+.titles {
+  display: flex;
+  flex-direction: column;
+justify-content: center;
+  gap: 25px;
+ 
+}
+
+h1 {
+text-align: center;
+  font-size: 3rem;
+  text-shadow: 8px 8px 18px rgb(34, 32, 32);
+  text-align: center;
+  color: var(--mt--color--primary);
+}
+
+
+
+
+
+
+.container_play {
+  width: 600px;
+  height: 600px;
+  perspective: 1000px; /* Añadido para perspectiva 3D */
+}
+
+#imagenGameOver {
+  display: flex;
+  position: absolute;
+  z-index: 2;
+}
+
+#gameBoard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 10px;
+}
+
+#fails,
+#fin {
+  font-size: 1.5rem;
+  font-family: frightMaiden;
+}
+
+#animationEnd {
+  position: fixed;
+  animation: animationEnd 1s infinite;
+  transform-origin: center;
+  font-size: 1.5rem;
+  font-family: frightMaiden;
+}
+
+@keyframes animationEnd {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+button {
+  border: inset var(--mt--color--2) 2px;
+  background-color:var(--mt--color--3);
+  padding: 15px;
+  margin: 10px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+ 
+}
+button:hover {
+  border: inset var(--mt--color--3) 2px;
+  background-color:var(--mt--color--2);
+}
+button a{
+  font-size: 3rem;
+}
+.btn {
+  border: solid white 2px;
+  border-radius: 20px;
+  background-color: rgb(173, 115, 7);
+  width: 200px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn:hover {
+  background-color: orange;
+  border: solid rgb(92, 6, 150);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.container_play {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.scoretable {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 15px;
+}
+
+.card {
+  width: 150px;
+  height: 150px;
+  perspective: 200px;
+
+
+}
+img{
+  width:150px;
+  height:150px;
+  object-fit:scale-down;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3)
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+
+}
+
+.front,
+.back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+
+  /* border: inset 3px #8aa538; */
+  display: grid;
+  place-content: center;
+  font-size: 5rem;
+  border-radius: 1rem;
+  backface-visibility: hidden;
+  user-select: none;
+}
+.front{
+  background: #40322B
+}
+
+.back {
+  background: transparent;
+  transform: rotateY(180deg);
+  
+  }
+
+.flipped {
+  transform: rotateY(180deg);
+  transition: transform 0.3s;
+}
+
+@media (max-width: 479px) {
+  /* Ajusta para el ancho del iPhone 12 */
+
+  body {
+    width: 100%;
+    height: 1000px;
+    color: white;
+    background-image: linear-gradient(
+        rgba(26, 240, 11, 0.492),
+        rgba(79, 6, 143, 0.492),
+        rgba(5, 5, 5, 0.492)
+      ),
+      url(../img/imagenBackground.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+  }
+
+
+
+  #gameBoard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 10px;
+    justify-items: center;
+  
+    background: rgb(40, 26, 169);
+    
+   
+  }
+
+  .container_play {
+    width: 500px;
+    height: 900px;
+    perspective: 1000px;
+    font-size: 2rem;
+    background-color: rgb(243, 73, 11);
+  }
+
+  .front,
+  .back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #6d1d51;
+    border: inset 3px #8aa538;
+    display: grid;
+    place-content: center;
+    font-size: 4rem;
+    border-radius: 0.5rem;
+    backface-visibility: hidden;
+    user-select: none;
+  }
+  
+  #animationEnd {
+    text-align: center;
+    position: fixed;
+    animation: animationEnd 1s infinite;
+    transform-origin: center;
+    font-size: 0.9rem;
+    font-family: frightMaiden;
+  }
+}
+
+@media (max-height: 730px) {
+  body {
+    width: 100%;
+    height: 100vh;
+    color: white;
+    background-image: linear-gradient(
+        rgba(26, 240, 11, 0.492),
+        rgba(79, 6, 143, 0.492),
+        rgba(5, 5, 5, 0.492)
+      );
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  #confetti {
+    display: none;
+  }
+}
+
+/* Start https://www.cursors-4u.com */
