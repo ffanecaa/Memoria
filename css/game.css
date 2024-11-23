@@ -227,6 +227,13 @@ img{
 
 /* Estilo para pantallas pequeñas (smartphones en orientación vertical) */
 @media (max-width: 480px) {
+  body{
+    background-image: linear-gradient(60deg,
+    var(--mt--color--1),
+    var(--mt--color--2),
+    var(--mt--color--3)
+    ) 
+  }
 
   .container {
     gap:5px}
