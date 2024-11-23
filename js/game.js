@@ -20,14 +20,14 @@ const elementos3 = [
  
 ];
 const elementos = [
-  "../img/becho.png",
-  "../img/perro.png",
-  "../img/roboensaladera.png",
-  "../img/roboperro.png",
-  "../img/robotoazul.png",
-  "../img/robotRojo.png",
-  "../img/robotRojoL.png",
-  "../img/rosa.png",
+  "./img/becho.png",
+  "./img/perro.png",
+  "./img/roboensaladera.png",
+  "./img/roboperro.png",
+  "./img/robotoazul.png",
+  "./img/robotRojo.png",
+  "./img/robotRojoL.png",
+  "./img/rosa.png",
  
 ];
 
