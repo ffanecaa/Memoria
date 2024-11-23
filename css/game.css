@@ -42,9 +42,9 @@ body {
 }
 
 .container {
-  margin-top: 0;
+  margin-top: 10px;
   display: flex;
-  gap: 40px;
+  gap: 20px;
   align-items: center;
   flex-direction: column;
  
@@ -72,8 +72,8 @@ text-align: center;
 
 
 .container_play {
-  width: 600px;
-  height: 600px;
+  width: 440px;
+  height: 440px;
   perspective: 1000px; /* Añadido para perspectiva 3D */
 }
 
@@ -85,7 +85,7 @@ text-align: center;
 
 #gameBoard {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 10px;
 }
 
@@ -169,15 +169,15 @@ a {
 }
 
 .card {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   perspective: 200px;
 
 
 }
 img{
-  width:150px;
-  height:150px;
+  width:100px;
+  height:100px;
   object-fit:scale-down;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
  
