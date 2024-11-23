@@ -16,7 +16,7 @@ const elementos = [
   "../img/robots/robotoazul.png",
   "../img/robots/robotRojo.png",
   "../img/robots/robotRojoL.png",
-  "../img/robots/rosa.png",
+  "./img/robots/rosa.png",
  
 ];
 
